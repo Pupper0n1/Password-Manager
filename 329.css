@@ -1,0 +1,7 @@
+#rightCardText {
+    display: flex;
+  }
+  
+#rightCardFill {
+    flex: 1;
+  }
