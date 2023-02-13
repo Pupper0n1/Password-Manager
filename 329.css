@@ -5,3 +5,8 @@
 #rightCardFill {
     flex: 1;
   }
+
+#opposite_sides {
+    display: flex;
+    justify-content: space-between;
+  }
