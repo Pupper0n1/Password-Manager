@@ -1,8 +1,8 @@
 function hover(img)
 {
- img.src = "open-trash-can.png";
+ img.src = "images/open-trash-can.png";
 }
 
 function hoverOut(img){
-    img.src = "closed-trash-can.png"
+    img.src = "images/closed-trash-can.png"
    }
