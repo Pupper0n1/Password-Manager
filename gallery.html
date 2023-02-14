@@ -41,7 +41,7 @@
         <h5 class="card-title"><div id="rightCardText">
           <div>Special title treatment</div>
           <div id="rightCardFill"></div>
-          <div><img src="images/closed-trash-can.png" width="40px" id="trashcan" data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="hover(this);" onmouseout="hoverOut(this)"></div></h5>
+          <div><img src="images/closed-trash-can.png" width="40px" id="trashcan" data-bs-toggle="modal" data-bs-target="#deleteModal" onmouseover="hover(this);" onmouseout="hoverOut(this)"></div></h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
@@ -54,7 +54,7 @@
         <h5 class="card-title"><div id="rightCardText">
           <div>Special title treatment</div>
           <div id="rightCardFill"></div>
-          <div><img src="images/closed-trash-can.png" width="40px" id="trashcan" data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="hover(this);" onmouseout="hoverOut(this)"></div></h5>
+          <div><img src="images/closed-trash-can.png" width="40px" id="trashcan" data-bs-toggle="modal" data-bs-target="#deleteModal" onmouseover="hover(this);" onmouseout="hoverOut(this)"></div></h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
@@ -67,7 +67,7 @@
         <h5 class="card-title"><div id="rightCardText">
           <div>Special title treatment</div>
           <div id="rightCardFill"></div>
-          <div><img src="images/closed-trash-can.png" width="40px" id="trashcan" data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="hover(this);" onmouseout="hoverOut(this)"></div></h5>
+          <div><img src="images/closed-trash-can.png" width="40px" id="trashcan" data-bs-toggle="modal" data-bs-target="#deleteModal" onmouseover="hover(this);" onmouseout="hoverOut(this)"></div></h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
@@ -80,7 +80,7 @@
         <h5 class="card-title"><div id="rightCardText">
           <div>Special title treatment</div>
           <div id="rightCardFill"></div>
-          <div><img src="images/closed-trash-can.png" width="40px" id="trashcan" data-bs-toggle="modal" data-bs-target="#exampleModal" onmouseover="hover(this);" onmouseout="hoverOut(this)"></div></h5>
+          <div><img src="images/closed-trash-can.png" width="40px" id="trashcan" data-bs-toggle="modal" data-bs-target="#deleteModal" onmouseover="hover(this);" onmouseout="hoverOut(this)"></div></h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
@@ -94,7 +94,9 @@
           <div>Add new password</div>
           <div id="rightCardFill"></div></h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#passwordForm">
+  Launch demo modal
+</button>
       </div>
     </div>
   </div>
@@ -103,7 +105,7 @@
 <!-- End of Password Cards -->
 
 <!-- Delete Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -124,6 +126,38 @@
   </div>
 </div>
 <!-- End of Delete Modal -->
+      
+<!-- Add Password Form Modal       -->
+
+
+
+<div class="modal fade" id="passwordForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        
+        
+          <input type="text" id="link" placeholder="link" style="margin: 10px">
+          <input type="text" id="username" placeholder="Username/Email" style="margin: 10px">
+          <input type="text" id="password" placeholder="Password" style="margin: 10px">
+          
+          
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end of Add Password Form Modal-->
 
 </body>
 </html>
